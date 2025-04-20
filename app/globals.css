@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --summit-yellow: #F7B81F;
+  --summit-teal: #1B4B5A;
+  --summit-red: #D12026;
+}
+
+@layer base {
+  body {
+    @apply text-summit-teal bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-summit-teal font-bold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-summit-red text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-medium;
+  }
+
+  .btn-secondary {
+    @apply bg-summit-teal text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-medium;
+  }
+
+  .btn-outline {
+    @apply border-2 border-summit-teal text-summit-teal px-6 py-3 rounded-lg hover:bg-summit-teal hover:text-white transition-colors font-medium;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-summit-teal mb-6;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4;
+  }
+} 
