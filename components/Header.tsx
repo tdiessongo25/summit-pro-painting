@@ -12,7 +12,7 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
     { name: 'About Us', href: '/about' },
-    { name: 'Gallery', href: '/gallery' },
+    // { name: 'Gallery', href: '/gallery' }, // Commented out Gallery link
     { name: 'Contact', href: '/contact' },
     { name: 'Free Estimate', href: '/free-estimate', className: 'bg-summit-red text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors' },
   ];
